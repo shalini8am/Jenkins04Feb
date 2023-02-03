@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="6" time="99.053846">
+<testcase classname="To validate the login functionality for amazon" name="To validate the login with invalid username and invalid password" time="21.215989">
+<system-out><![CDATA[When To launch the amz url..................................................passed
+And To pass the invalid username or phno in email field.....................passed
+And To click the continue button............................................passed
+And To pass the invalid password in password field..........................passed
+And to click the signin button..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate the login functionality" name="To validate the valid username and valid password" time="18.788126">
+<failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#13;&#10;&#9;at org.stepdefinition.FacebookLogin.to_pass_the_valid_username_in_email_field(FacebookLogin.java:33)&#13;&#10;&#9;at ✽.To pass the valid username in email field(src/test/resources/Facebook.feature:7)&#13;&#10;"><![CDATA[When To launch the url of the application...................................passed
+And To pass the valid username in email field...............................failed
+And To pass the valid password in password field............................skipped
+And To click the login button...............................................skipped
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at org.stepdefinition.FacebookLogin.to_pass_the_valid_username_in_email_field(FacebookLogin.java:33)
+	at ✽.To pass the valid username in email field(src/test/resources/Facebook.feature:7)
+]]></failure>
+</testcase>
+<testcase classname="To validate the login functionality" name="To validate the positive and negative testcase in login field" time="18.671805">
+<system-out><![CDATA[When Launch the application url in facebook.................................passed
+And pass the positive and negative "abc@gmail.com" in email field...........passed
+And pass the positive and negative "abc1234" in password field..............passed
+And Click the login button..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate the login functionality" name="To validate the positive and negative testcase in login field 2" time="19.216873">
+<system-out><![CDATA[When Launch the application url in facebook.................................passed
+And pass the positive and negative "dtj@gmail.com" in email field...........passed
+And pass the positive and negative "dtj5678" in password field..............passed
+And Click the login button..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate the login functionality" name="To validate the positive and negative testcase in login field 3" time="2.531902">
+<system-out><![CDATA[When Launch the application url in facebook.................................passed
+And pass the positive and negative "rsp@gmail.com" in email field...........passed
+And pass the positive and negative "rsp3567" in password field..............passed
+And Click the login button..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate the login functionality" name="To validate the positive and negative testcase in login field 4" time="18.629151">
+<system-out><![CDATA[When Launch the application url in facebook.................................passed
+And pass the positive and negative "lgk@gmail.com" in email field...........passed
+And pass the positive and negative "lgk8723" in password field..............passed
+And Click the login button..................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
